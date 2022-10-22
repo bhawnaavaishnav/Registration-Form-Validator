@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1a9ae2;
+    font-family: 'Lato', sans-serif;;
+}
+
+.form-box{
+    max-width: 430px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.input-field{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 17px;
+    min-height: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]{
+    padding-right: 25px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 25px;
+}
+
+label{
+    display: block;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+input[type="submit"]{
+    background: #1a9ae2;
+    cursor: pointer;
+    color: #fff;
+}
+
+input[type="submit"]:hover{
+    background: #01456d;
+    cursor: pointer;
+    color: #fff;
+}
+
+.fa{
+    position: absolute;
+    right: 10px;
+    margin-top: -24px;
+}
+
+.input-field.error input{
+    border-color: #f00;
+    border-width: 2px;
+}
+
+.input-field.error .fa{
+    color: #f00;
+}
+
+.input-field.success .fa{
+    color: #0b0;
+}
+
+.input-field.success input{
+    border-color: #0b0;
+    border-width: 2px;
+}
+
+.input-field span{
+    display: none;
+}
+
+.input-field.error span{
+    font-size: 15px;
+    color: #f00;
+    display: block;
+}
+
+.input-field.success span{
+    color: #0b0;
+}
+
+@media screen and (max-width: 800px) {
+    .form-box{
+        margin: 100px auto;
+    }
+}
